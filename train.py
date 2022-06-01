@@ -17,16 +17,6 @@ from PIL import Image
 app = typer.Typer()
 
 
-# def imshow(inp, title):
-#     mean = torch.tensor([0.485, 0.456, 0.406])
-#     std = torch.tensor([0.229, 0.224, 0.225])
-#     inp = inp.numpy().transpose((1, 2, 0))
-#     inp = std * inp + mean
-#     inp = np.clip(inp, 0, 1)
-#     plt.imshow(inp)
-#     plt.title(title)
-#     plt.show()
-
 
 @app.command(short_help="1st argument - directory with 2 sub directories \"training\" and \"evaluation\" which have n \
                         subdirectories, where n is the number of classes")
@@ -80,7 +70,7 @@ def train(root_directory: str, num_of_epochs: int = 4):
     # Make a grid from batch
     out = torchvision.utils.make_grid(inputs1)
 
-    # imshow(out, title=[class_names[x] for x in classes])
+   
 
     def train_model(model, criterion, optimizer, scheduler, num_epochs=25):
         starting_time = time.time()
