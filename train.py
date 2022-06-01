@@ -171,6 +171,7 @@ def classify(source, target):
     model = models.resnet152()
     model.fc = torch.nn.Linear(model.fc.in_features, len(common_data["classes"]))
     model.load_state_dict(torch.load("model.pth"))
+    model.eval()
 
     mean = torch.tensor([0.485, 0.456, 0.406])
     std = torch.tensor([0.229, 0.224, 0.225])
