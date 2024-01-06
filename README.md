@@ -1,6 +1,6 @@
 # Photo Classification Application
 
-This repository contains the small Photo Classification Application, a Python-based tool developed as part of the project at the National Research University Higher School of Economics. The application is designed to classify photos into custom groups using advanced machine learning techniques.
+This repository contains  small Photo Classification Application, a Python-based tool developed as part of the project at the National Research University Higher School of Economics. The application is designed to classify photos into custom groups using advanced machine learning techniques.
 
 ## Project Overview
 
